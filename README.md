@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4cce63c447374c47b757fdeaee6b5e63)](https://www.codacy.com/project/sean.felderman/my-todo/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sfelderman/my-todo&amp;utm_campaign=Badge_Grade_Dashboard)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
