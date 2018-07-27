@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {addTodo, toggleTodo} from '../actions/todos'
+import {addTodo, toggleTodo} from '../actions/todos';
 import PropTypes from 'prop-types';
 import TodoBar from './TodoBar';
 import TodoList from './ListContainer';
@@ -11,14 +11,14 @@ class TodoContainer extends React.Component {
 
         this.state = {
             inputValue: ''
-        }
+        };
 
         this.onKeyPress = this.onKeyPress.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(e) {
-        this.setState({inputValue: e.target.value})
+        this.setState({inputValue: e.target.value});
     }
 
     onKeyPress(ev) {
@@ -48,8 +48,8 @@ class TodoContainer extends React.Component {
 const mapStateToProps = (state) => {
     return {
         todos: state.todos
-    }
-  }
+    };
+  };
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -57,16 +57,16 @@ const mapDispatchToProps = (dispatch) => {
         dispatch(addTodo(todo));
       },
       onTodoToggled(todo) {
-        dispatch(toggleTodo(todo.id))
+        dispatch(toggleTodo(todo.id));
       }
-    }
+    };
 };
 
 TodoContainer.propTypes = {
     onCreateTodo: PropTypes.func.isRequired,
     onTodoToggled: PropTypes.func.isRequired,
     todos: PropTypes.array.isRequired
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)
 (TodoContainer);
