@@ -4,19 +4,19 @@ export const ADD_TODO = 'ADD_TODO';
 let todoIds = 0;
 
 export function toggleTodo(id) {
-    return {
-        type: TOGGLE_TODO,
-        id
-    }
+  return {
+    type: TOGGLE_TODO,
+    id
+  };
 }
 
 export function addTodo(text) {
-    return {
-        type: ADD_TODO,
-        todo: {
-            checked: false,
-            text,
-            id: todoIds++
-        }
+  return {
+    type: ADD_TODO,
+    todo: {
+      checked: false,
+      text,
+      id: todoIds++
     }
+  };
 }
