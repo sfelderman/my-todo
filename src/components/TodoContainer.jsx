@@ -30,7 +30,7 @@ class TodoContainer extends React.Component {
             this.setState({inputValue: ''});
           }
         }
-    };
+    }
 
     render() {
         const {todos, onTodoToggled} = this.props;
@@ -42,7 +42,7 @@ class TodoContainer extends React.Component {
                 <TodoList todos={todos} onTodoToggled={onTodoToggled}/>
             </React.Fragment>
         );
-    };
+    }
 }
 
 const mapStateToProps = (state) => {
@@ -68,5 +68,4 @@ TodoContainer.propTypes = {
     todos: PropTypes.array.isRequired
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)
-(TodoContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(TodoContainer);
