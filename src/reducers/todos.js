@@ -17,4 +17,4 @@ export default function todos(state = defaultState, action) {
     default:
       return state;
   }
-};
+}
