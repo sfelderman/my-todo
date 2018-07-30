@@ -4,11 +4,7 @@ import {
   REMOVE_TODO
 } from '../actions/todos';
 
-const defaultState = [
-
-];
-
-export default function todos(state = defaultState, action) {
+export default function todos(state = [], action) {
   switch (action.type) {
     case ADD_TODO:
       return [...state, action.todo];
