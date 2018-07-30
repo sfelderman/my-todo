@@ -30,7 +30,7 @@ class TodoContainer extends React.Component {
         this.setState({inputValue: ''});
       }
     }
-  };
+  }
 
   render() {
     const {todos, onTodoToggled, onTodoDeleted} = this.props;
@@ -42,7 +42,7 @@ class TodoContainer extends React.Component {
         <ListContainer todos={todos} onTodoToggled={onTodoToggled} onTodoDeleted={onTodoDeleted}/>
       </React.Fragment>
     );
-  };
+  }
 }
 
 const mapStateToProps = (state) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import TodoContainer from './TodoContainer';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 const MainView = () => {
   return (
