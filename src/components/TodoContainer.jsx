@@ -72,5 +72,4 @@ TodoContainer.propTypes = {
   todos: PropTypes.array.isRequired
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)
-(TodoContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(TodoContainer);
