@@ -1,14 +1,14 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import TodoContainer from './components/TodoContainer';
+import MainView from './components/MainView';
 
 const App = ({}) => {
   return (
     <React.Fragment>
       <CssBaseline/>
-      <TodoContainer />
+      <MainView />
     </React.Fragment>
   );
-}
+};
 
 export default App;
